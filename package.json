@@ -1,0 +1,34 @@
+{
+  "name": "reverseproxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwsywhan/apigateway.git"
+  },
+  "author": "ywhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iwsywhan/apigateway/issues"
+  },
+  "homepage": "https://github.com/iwsywhan/apigateway#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "helmet": "^3.16.0",
+    "http-proxy": "^1.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "morgan-body": "^2.4.5",
+    "normalize-port": "^1.0.0",
+    "rotating-file-stream": "^1.4.0",
+    "winston": "^3.2.1"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "1": [
+
+    ],
+    "2": [
+
+    ],
+    "9": {
+            "users": [                    
+                { 
+                    "method": "PUT",
+                    "controller": "register"
+                }
+            ]
+    }    
+}

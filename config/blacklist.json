@@ -1,0 +1,21 @@
+{
+    "common": {
+        "xss": ["<", ">", "&", "\"", "'", "#", "*", "=", "+"],
+        "sqlinjection": ["<", ">", "&", "\"", "'", "+", "#", "*", "=", "||", "- -", "@"],
+        "fileup_img": ["BMP", "GIF", "JPEG", "JPG", "PNG", "PSD"],
+        "fileup_doc": ["TXT", "DOC", "DOCX", "XLS", "XLSX", "PPT", "PPTX"],
+        "fileup_block": ["JSP","WAR","ASP","ASPX","CER","CDX","ASA","HTA","HTML","SHTM","HTM","PHP","PHP3","PHP4","PHP5","HTACCESS"],
+        "filedown": ["../","..","var/log","/var/log","etc/passwd","/etc/passwd","etc/hosts","/etc/hosts","etc/shadow","/etc/shadow","root"
+            ,"wwwroot","[.][.]/","/root","c:[\\]","c:/","[\\]wwwroot","/wwwroot"]
+    },
+    "forEditor": {
+        "xss": ["STYLE","ONABORT","ONBLUR","ONCHANGE","ONCLICK","ONDBCLICK","ONERROR","ONFOCUS","ONKEYDOWN","ONKEYUP","ONKEYPRESS"
+            ,"ONLOAD","ONMOUSEDOWN","ONMOUSEMOVE","ONMOUSEOUT","ONMOUSEOVER","ONMOUSEUP","ONRESET","ONRESIZE","ONSELECT","ONSUBMIT"
+            ,"ONUNLOAD","ONFILTERCHANGE</ite","ONDRAGDROP","EXPRESSION","ONMOVE"],
+        "sqlinjection": ["sys.user$","all_users","session_privs","dba_sys_privs","all_","sys.tab","SYSAUX","user_tables","master.."
+            ,"syscolumns","sysobjects","sys.sql_logins","_name","information_schema","dbms_lock",".sleep","UTL_",".get_host_name"
+            ,".get_host_address",".REQUEST","to_","SYS.DATABASE_NAME","chartorowid","hextoraw","username","sys_","userenv"
+            ,"user_name","is_srvrolemember","TYPE_NAME","HOST_NAME","quotename","sp_","xp_cmdshell","SERVERNAME","SYSTEM_USER"
+            ,"procedure","session_user","group_concat","concat_ws","ifnull"]
+    }
+}
